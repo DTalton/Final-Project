@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpHub - Charities</title>
+    <link rel="stylesheet" href="styless.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef6fb;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            min-height: 100vh;
+        }
+
+        .button-link {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px 5px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .button-link:hover {
+            background-color: #2980b9;
+        }
+
+        .back-button {
+            background-color: #2ecc71; /* green */
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+        }
+
+        .back-button:hover {
+            background-color: #27ae60;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Charities List</h1>
+    <p>Select a charity to learn more and volunteer.</p>
+
+    <!-- Resized image -->
+    <img 
+        src="https://thumbs.dreamstime.com/b/charity-word-cloud-heart-concept-56405290.jpg" 
+        alt="Charity Image" 
+        style="width: 80%; max-width: 600px; height: auto; border-radius: 10px; margin-bottom: 20px;"
+    >
+
+    <!-- Styled Links as Buttons -->
+    <ul>
+        <li><a href="charity-profile.html?charity=foodbank" class="button-link">Local Food Bank</a></li>
+        <li><a href="charity-profile.html?charity=animalrescue" class="button-link">Animal Rescue Center</a></li>
+        <li><a href="charity-profile.html?charity=eduprogram" class="button-link">Education Program</a></li>
+    </ul>    
+
+    <!-- Back button styled differently and moved to bottom-right -->
+    <a href="index.html" class="button-link back-button">Back to Home</a>
+
+</body>
+</html>
